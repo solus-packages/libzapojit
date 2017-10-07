@@ -1,13 +1,14 @@
 name       : libzapojit
 version    : 0.0.3
-release    : 1
+release    : 2
 source     :
     - https://download.gnome.org/sources/libzapojit/0.0/libzapojit-0.0.3.tar.xz : 3d25f99329105abb99d1e9651b0aa1842065456ea54c22970a7330e9f3d1c37e
 license    : LGPL-2.1
+component  : programming.library
 summary    : GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs
 description: |
     GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs
-libsplit: no
+libsplit   : no
 builddeps  :
     - pkgconfig(goa-1.0)
     - pkgconfig(gobject-introspection-1.0)
