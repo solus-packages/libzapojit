@@ -10,7 +10,7 @@
         <Summary xml:lang="en">GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs</Summary>
         <Description xml:lang="en">GLib/GObject wrapper for the SkyDrive and Hotmail REST APIs
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>libzapojit</Name>
@@ -20,9 +20,15 @@
         <PartOf>programming.library</PartOf>
         <Files>
             <Path fileType="library">/usr/lib64/girepository-1.0/Zpj-0.0.typelib</Path>
-            <Path fileType="library">/usr/lib64/lib*.so</Path>
-            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
-            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="library">/usr/lib64/libzapojit-0.0.so</Path>
+            <Path fileType="library">/usr/lib64/libzapojit-0.0.so.0</Path>
+            <Path fileType="library">/usr/lib64/libzapojit-0.0.so.0.0.0</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/AUTHORS</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/COPYING</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/ChangeLog</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/INSTALL</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/NEWS</Path>
+            <Path fileType="doc">/usr/share/doc/libzapojit/README</Path>
             <Path fileType="data">/usr/share/gir-1.0/Zpj-0.0.gir</Path>
         </Files>
     </Package>
@@ -33,11 +39,19 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="3">libzapojit</Dependency>
+            <Dependency release="4">libzapojit</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="data">/usr/lib64/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-authorization-domain.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-authorizer.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-goa-authorizer.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-skydrive-entry.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-skydrive-file.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-skydrive-folder.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-skydrive-photo.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj-skydrive.h</Path>
+            <Path fileType="header">/usr/include/libzapojit-0.0/zpj/zpj.h</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/zapojit-0.0.pc</Path>
         </Files>
     </Package>
     <Package>
@@ -47,12 +61,30 @@
 </Description>
         <PartOf>programming.docs</PartOf>
         <Files>
-            <Path fileType="doc">/usr/share/gtk-doc/html/</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjGoaAuthorizer.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjSkydrive.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjSkydriveEntry.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjSkydriveFile.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjSkydriveFolder.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ZpjSkydrivePhoto.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/annotation-glossary.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/authorization.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/home.png</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/index.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/index.sgml</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/ix01.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/left.png</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/libzapojit-0.0-ZpjAuthorizer.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/libzapojit-0.0.devhelp2</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/right.png</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/skydrive.html</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/style.css</Path>
+            <Path fileType="doc">/usr/share/gtk-doc/html/libzapojit-0.0/up.png</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2018-04-22</Date>
+        <Update release="4">
+            <Date>2019-04-13</Date>
             <Version>0.0.3</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
